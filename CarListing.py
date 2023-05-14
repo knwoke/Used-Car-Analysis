@@ -9,6 +9,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 #creating empty array
 carList = []
 
+#creating for loop which will define URL, scrape the intended variables, push the variables back to the array 
 def myCars(page):
     url = f'https://www.cars.com/shopping/results/?page={page}&page_size=100&list_price_max=&makes[]=&maximum_distance=100&models[]=&stock_type=all&zip=75287'    
     r = requests.get(url, headers=headers)
