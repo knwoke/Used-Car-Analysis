@@ -27,9 +27,11 @@ def myCars(page):
         carList.append(car)
     return carList
 
+#defining the pages on cars.com which need to be scraped
 for x in range(196,210):
     myCars(x)
-    
+
+#creating dataframe to export scraped results
 df = pd.DataFrame(carList)   
 df.to_csv('carsList16.csv', index=False)
 
