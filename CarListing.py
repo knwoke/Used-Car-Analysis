@@ -27,7 +27,7 @@ def myCars(page):
         carList.append(car)
     return carList
 
-#defining the pages on cars.com which need to be scraped
+#defining the pages (based on pagination) on cars.com which need to be scraped
 for x in range(196,210):
     myCars(x)
 
